@@ -75,6 +75,11 @@ body {
   border-radius: 5px;
 }
 
+.login-button:active {
+  /* border: 2px solid rgb(5, 103, 149); */
+  box-shadow: 1px 1px 5px grey;
+}
+
 /* UNDER THE FORM */
 .buttons-container {
   display: flex;
