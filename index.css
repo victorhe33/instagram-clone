@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Instafont-Regular";
+  src: url("instafont-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* LOG-IN BOX */
+.log
+
+.instagram-logo {
+  font-family: "Instafont-Regular";
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px gray;
+}
+
+/* FORM */
+.form-username {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* UNDER THE FORM */
+.buttons-container > img {
+  height: 40px;
+  width: auto;
+}
