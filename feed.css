@@ -1,3 +1,15 @@
+:root {
+  --ig-blue: rgb(5, 103, 149);
+  --ig-dark-blue: #305F87;
+}
+
+@font-face {
+  font-family: "Instafont-Regular";
+  src: url("instafont-regular.otf") format("opentype");
+  font-weight: 1000;
+  font-style: normal;
+}
+
 body {
   display: flex;
   flex-direction: column;
