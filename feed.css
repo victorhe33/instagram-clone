@@ -85,19 +85,23 @@ body {
 }
 
 /* BODY */
-.image-container {
-  display: flex;
-  flex-direction: column;
+.image-shell {
   background-color: #DCDDDE;
   border-left: 1px solid #CACBCC;
   border-right: 1px solid #CACBCC;
-  padding: 30px;
+  padding: 50px;
+  margin: 40px;
 }
 
-.image-container > img {
+.image-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, .5);
+}
+
+.image-insert {
   width: 450px;
   height: auto;
-  /* box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, .5); */
 }
 
 /* FOOTER */
