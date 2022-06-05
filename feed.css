@@ -10,10 +10,47 @@
   font-style: normal;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  height: 98vh;
+  height: 100%;
 }
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--ig-blue);
+  width: 100%;
+}
+
+.instagram-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  font-family: "Instafont-Regular";
+  font-size: 20px;
+  color: whitesmoke;
+  text-shadow: 2px 2px gray;
+}
+
+/* BODY */
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container > img {
+  width: 450px;
+  height: auto;
+}
+
+/* FOOTER */

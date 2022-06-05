@@ -11,7 +11,7 @@ fetchPromise.then(response => {
 //QUERY SELECTOR /ID
 const imageContainer = document.getElementById("imageContainer");
 
-//set a unique ID which will be incremented to give all containers unique IDs
+//set a unique ID which will be incgremented to give all containers unique IDs
 let uniqueId = 1;
 
 //create image/container with unique ID. if image doesnt load, onerror will call a function to hide container.
@@ -29,3 +29,22 @@ function removeImage(identifier) {
   const targetElement = document.getElementById(`${identifier}`);
   targetElement.style.display = 'none';
 }
+
+
+//AWAIT / ERROR HANDLER ALTERNATIVE METHOD OF HANDLING ERRORED IMAGES
+// const imgResponse = await fetch("https://us-central1-codesmith-curriculum-server.cloudfunctions.net/app/images");
+// const imgUrls = await imgResponse.json();
+
+// const imageContainer = document.getElementById('imageContainer');
+
+// imgUrls.forEach(url => {
+//   const img = document.createElement('img');
+//   img.setAttribute('src', url);
+//   img.setAttribute('alt', 'image');
+//   // img.setAttribute('onerror', "this.style.display = 'hidden';");
+//   // or...
+//   img.addEventListener('error', event => {
+//     event.target.style.display = 'none';
+//   });
+//   imageContainer.appendChild(img);
+// }); 
