@@ -15,7 +15,7 @@ const imageContainer = document.getElementById("imageContainer");
 let uniqueId = 1;
 
 //create image/container with unique ID. if image doesnt load, onerror will call a function to hide container.
-function generate(url) {  
+function generate(url) {
   //image insert
   const img = document.createElement("img");
   img.setAttribute('src', `${url}`);
@@ -23,6 +23,9 @@ function generate(url) {
   img.setAttribute('id', `${uniqueId}`);
   img.setAttribute('onerror', `removeImage(${uniqueId})`);
   imageContainer.appendChild(img);
+
+  //card insert
+  
   uniqueId++;
 }
 
